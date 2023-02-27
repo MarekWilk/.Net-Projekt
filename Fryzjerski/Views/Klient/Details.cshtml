@@ -1,0 +1,58 @@
+﻿@model Fryzjerski.Models.Klient
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Klient</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Imie)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Imie)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Nazwisko)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nazwisko)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NumerTelefonu)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NumerTelefonu)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.KlientID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

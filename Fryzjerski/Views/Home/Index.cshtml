@@ -1,0 +1,134 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zakład Fryzjerski Barber | Strona Główna</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            Zakład Fryzjerski Barber
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Index", "Home/Index")">Strona Główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Usluga/Index")">Usługi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Fryzjer/Index")">Nasza Kadra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Klient/Index")">Nasi Klienci</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                    <h2 class="header-title">Zadbaj o swój wizerunek z naszym zakładem fryzjerskim "Barber!"</h2>
+                    <p class="header-subtitle">
+                        Zakład fryzjerski Barber to miejsce, w którym klienci mogą skorzystać z usług fryzjerskich, czyli strzyżenia, koloryzacji, stylizacji i pielęgnacji włosów. W naszym zakładzie pracują profesjonalni fryzjerzy, którzy mają odpowiednie kwalifikacje i doświadczenie w swoim zawodzie.
+                        Zajmujemy się przede wszystkim:
+
+                        strzyżeniem włosów - w zależności od preferencji klienta fryzjer może zastosować różne techniki strzyżenia;
+
+                        koloryzacją włosów - klienci mogą zmienić kolor swoich włosów, zastosować refleksy, balejaż czy ombre;
+
+                        stylizacją włosów - fryzjerzy mogą zrobić u klienta dowolną fryzurę, czy to na specjalną okazję, czy na co dzień;
+
+                        pielęgnacją włosów - fryzjerzy doradzają swoim klientom, jak dbać o włosy, jakie kosmetyki stosować i jakie zabiegi pielęgnacyjne wykonywać.
+
+                        W zakładzie fryzjerskim można także kupić profesjonalne kosmetyki do pielęgnacji i stylizacji włosów
+                    </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nasze Usługi</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Strzyżenie</h5>
+                            <p class="card-text">
+                                Dla naszych klientów oferujemy-header-title">Nasza oferta</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Strzyżenie męskie</h5>
+                            <p class="card-text">Oferujemy różne rodzaje strzyżeń męskich - od klasycznych po najnowsze trendy.</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Fryzury damskie</h5>
+                            <p class="card-text">Stworzymy dla Ciebie niepowtarzalną fryzurę, która podkreśli Twoją urodę i styl.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="@Url.Action("Index", "Usluga/Index")" class="btn btn-primary btn-block">Zobacz więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-header-title">Kontakt</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Zapraszamy do nas</h5>
+                            <p class="card-text">ul. Młyńska 20<br>31-041 Kraków<br>+48 123 456 789<br>info@zakladfryzjerskikrakow.pl</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-header-title">Nasi fryzjerzy</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Zapraszamy do nas</h5>
+                            <p class="card-text">Nasi fryzjerzy to pasjonaci swojego zawodu, którzy zawsze dążą do doskonałości.</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Doświadczenie i wiedza</h5>
+                            <p class="card-text">Nasi fryzjerzy posiadają wieloletnie doświadczenie i stale doskonalą swoje umiejętności.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="@Url.Action("Index", "Fryzjer/Index")" class="btn btn-primary btn-block">Poznaj naszych fryzjerów</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <p class="m-0 text-center">Zakład Fryzjerski Kraków &copy; 2023</p>
+        </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvYjLv6Ml7E6ly/Y95omDZWGj3B" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmIj4RXweCJXwE6BfSP" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
